@@ -1,0 +1,29 @@
+Subir un proyecto a GitHub
+
+Dentro de mi cuenta de GitHub, presionar la etiqueta "Repository" y presionar el boton "New".
+
+Una recomendacion es aprender a utilizar la pagina con los nombres en INGLES y no depender del traductor de google para que cambie los textos a español ya que no siempre se traducen correctamente.
+
+En "Repository name" escribir un nombre que sea descriptivo del proyecto que se esta creando. Por ejemplo: Platzi_cursoPracticoJavascript2022
+
+Agregar una "Description" donde se puede escribir un resumen de que trata el proyecto. Por ejemplo: Este ejercicio lo aprendí en el nuevo Curso Práctico de JavaScript.
+
+Seleccionar si este repositorio sera "Public" o "Private". 
+NOTA: si selecciono publico, cualquier persona podra ver mi proyecto, pero no podran editarlo, ya que para ello los debo invitar a participar en dicho proyecto.
+
+En la parte final me preguntara si quiero agregar un readme, un archivo .gitignore y una licencia.
+Si elijo alguna de estas opciones, se producira un error al querer conectar mi proyecto en mi equipo con el repositorio en la nube, porque existiran archivos que no existen en ambas versiones.
+Es por este motivo que al conectar un reposotorio en GitHub con mi proyecto en local, SIEMPRE debo traer cualquier cambio posible con el comando git pull.
+
+Finalmente, presionar el boton "Create Repository".
+
+En una nueva pantalla, el mismo GitHub nos enseñara a enlazar nuestro proyecto local al servidor en la nube, para esto debere seguir los siguientes pasos en el mismo orden:
+
+* inicializar el proyecto -> git init
+* crear un archivo readme (opcional) -> git add README.md
+* crear un archivo ignore directamente en VSC.
+* agregar todos los archivos a git -> git add -A
+* crear un commit -> git commit -m "first commit"
+* cambiar el nombre de la rama MASTER por MAIN -> git branch -M main
+* agregar un servidor remoto -> git remote add origin https://github.com/felipemunozca/platzi_cursoPracticoJavascript2022.git
+* subir los archivos al servidor -> git push -u origin main

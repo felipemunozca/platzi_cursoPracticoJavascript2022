@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulación básica del DOM - Curso Práctico de JS</title>
+</head>
+<body>
+    <h1>Eventos en JavaScript: interactuando con usuarios</h1>
+
+    <h2>Manipulación del DOM básica</h2>
+
+    <input id="numero1" placeholder="Escribe un numero">
+    <input id="numero2" placeholder="Escribe un numero">
+    <!-- <input id="numero2" placeholder="Escribe un numero" onchange="console.log('agrego caracteres en el input')"> -->
+    <!-- Se pueden ejecutar ciertas acciones de JS directamente desde el lado del html. Una forma de hacerlo es utilizando el evento onclick cuando se presiona un boton.
+    otro evento que funciona con los input es onchange, se puede pedir una ejecucion de codigo, y al hacer clic fuera del input se ejecutara la instruccion JS. -->
+    <!-- Este es un ejemplo de antiguas practicas con JS que se fueron eliminando al ir mejorando los estandares de programacion. Como recomencadacion para todo programador, es separar los lenguajes en diferentes archivos y mesclarlos lo menos posible. -->
+    <!-- <button id="btnCalcular" onclick="console.log('click desde el boton')">Calcular</button> -->
+
+    <!-- una forma en la que se actualizo el uso de JS desde el html fue agregando al metodo onclick el nombre de una funcion creada en un archivo js distinto. -->
+    <!-- para indicar que es una funcion debe llevar el nombre y las parentesis vacios. -->
+    <button id="btnCalcular" onclick="btnOnClick()">Calcular</button>
+
+    <p id="resultado"></p>
+
+    <script src="./assets/js/clase12_script.js"></script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+Continuando con el curso, lo siguiente sera clonar el repositorio del curso practico de frontend developer impartido por Estefany Aguilar.
+El repositorio es el siguiente:
+https://github.com/platzi/curso-frontend-developer-practico
+
+A continuacion, vamos a utilizar este proyecto para hacerle cambios propios y en vez de descargarlo o clonarlo, utilizaremos un FORK para participar del proyecto, crear nuevas funcionalidades y luego realizar un PULL REQUEST para que aceptan nuestros cambios al codigo.
+
+paso 1: presionar el boton FORK en el menu a la derecha arriba.
+paso 2: nos aparecera una opcion para cambiar el nombre del repositorio por el que queramos (en este caso quedara igual). Tambien puedo agregar una descripcion "Proyecto que mescla el curso de frontend developer con el curso práctico de javascript". Finalmente, presionar el boton CREATE FORK.
+paso 3: ahora que el proyecto existe en "mis repositorios" presiono el boton CODE y en la pestaña SSH copiar la url.
+paso 4: en mi computador, creo una nueva carpeta llamada "proyectoClonado" y mediante la consola escribo el comando:
+> git clone git@github.com:felipemunozca/curso-frontend-developer-practico.git
+
+/*****************/
+
+Una recomendacion de JuanDc:
+
+✅ No hay que llegar a imponer, sino a contribuir y para eso hay que entender como esta el codigo con el que estan trabajando, su historia, las posibles fallas , lo que esta bien, lo que esta mal y hasta entonces se podra contribuir en el proyecto.

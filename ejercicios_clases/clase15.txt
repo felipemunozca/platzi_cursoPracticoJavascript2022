@@ -1,3 +1,7 @@
+15/27 Proyectos con JS y GitHub desde cero
+
+
+
 En GitHub crear un nuevo proyecto llamado curso-practico-javascript-desdecero.
 dejarlo publico.
 agregar un readme. Y en el template elegir Node.

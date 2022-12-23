@@ -1,0 +1,29 @@
+En GitHub crear un nuevo proyecto llamado curso-practico-javascript-desdecero.
+dejarlo publico.
+agregar un readme. Y en el template elegir Node.
+Agregar una licencia. MIT
+crear repositorio.
+
+Ahora debemos clonar el proyecto en nuestra maquina, para ello lo primero sera presionar el boton CODE y en la pestaña SSH, copiar la url que aparece en el input.
+
+En mi computador, abrir la terminal, navegar por consola hasta llegar a la carpeta donde guardare el proyecto y utilizar el comando:
+> git clone + la url de GitHub.
+
+Entro a la carpeta del proyecto y Si ejecuto el comando 
+> ls 
+deberia aparecer la licencia y el readme.
+
+Ahora debo abrir el proyecto en VSC y esto tambien se puede hacer desde la consola, para ello escribo el comando:
+> code ./ -r
+Utilizando ./ le indico a VSC que esta es la carpeta del proyecto y con -r le indico que reinicie el editor en caso de tenerlo abierto con otro proyecto.
+
+realizo unos comentarios en el archivo gitignore. Luego los agrego con el comando
+> git add -A 
+y guardo el commit con el comando
+> git commit -m "Update gitignora"
+
+Finalmente subo los cambios al repositorio y como el proyecto esta clonado, no es necesario apuntar a la rama main, sino que solo vasta con utilizar el comando
+> git push
+
+creo nuevos archivos, index.html y script.js
+Los agrego y luego guardo el commit para subirlo al repositorio.

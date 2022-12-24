@@ -1,0 +1,24 @@
+18/27 Fusión del menú en desktop
+
+
+
+La primera tarea sera fusionar el codigo de los archivos clase11.html con clase7.html para hacer aparecer y desaparecer el menu del usuario al presionar el correo.
+
+Luego muevo el codigo CSS al nuevo archivo styles para comenzar a ordenar el codigo, revisando con cuidado no copiar codigo repetido.
+
+Ahora se aprovecha de crear nuevas funciones en CSS como agregarle nuevos valores a las clases ya existentes, y crear una nueva clase llamada inactive{} para ocultar bloques de codigo de la vista del index.
+
+A continuacion, utilizando JS se le agregara interaccion al proyecto, para ello se crea una funcion para hacer aparecer y desarparecer el menu pequeño al presionar el email. El codigo seria el siguiente:
+
+    /* crear variables para seleccionar elementos del html. */
+    const menuEmail = document.querySelector('.navbar-email');
+    const desktopMenu = document.querySelector('.desktop-menu');
+
+    /* escuchar el metodo click que al presionar el email, aparesca y  desaparesca el menu pequeño. */
+    /* toogle significa intercambiar */
+    menuEmail.addEventListener('click', toogleDesktopMenu);
+
+    /* se crea la funcion que utilizara la propiedad classList para poner o quitar la clase inactive que cree en el archivo styles.css */
+    function toogleDesktopMenu() {
+        desktopMenu.classList.toggle('inactive');
+    }

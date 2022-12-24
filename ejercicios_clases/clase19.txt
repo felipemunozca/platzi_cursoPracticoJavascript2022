@@ -1,0 +1,35 @@
+19/27 Fusión del menú en mobile
+
+
+
+Ya se pudo crear la primera funcionalidad del proyecto, ahora vamos a agregar el menu del sitio que al cambiar a pantalla movil debera aparecer al presionar un boton, para esto debemos fusionar el codigo de clase8.html con lo que llevamos.
+
+Fijarse muy bien tanto en el html como en el css, donde pegamos el codigo, ya que debe existir una logica ante todo.
+
+Utilizando JS, se crea un evento para hacer aparecer el menu de la clase8.html al presionar el icono con 3 rayas. Para esto, el codigo quedaria asi:
+
+    /* Selector para el menu movil. */
+    const menuHamIcon = document.querySelector('.menu');
+    const mobileMenu = document.querySelector('.mobile-menu');
+
+    menuHamIcon.addEventListener('click', toogleMobileMenu);
+
+    /* Creo una nueva funcion para hacer aparecer y desaparecer el menu hamburguesa al presionar el icono de las 3 rayas. */
+    function toogleMobileMenu() {
+        mobileMenu.classList.toggle('inactive');
+    }
+
+
+Un detalle importante, es que al cambiar de tamaño las pantallas los menus tanto del usuario como el de hamburguesa siguen visibles, por lo que utilizando media queries solucionaremos esto. Se crean dos nuevas reglas, una para un tamaño maximo y otra para un tamaño minimo y como consejo, nunca colocarles el mismo numero, ya que puede generar conflictos, por lo que es buena idea separarlos sumandole un 1 a uno de los dos valores.
+
+    @media (max-width: 640px) {
+        .desktop-menu {
+            display: none;
+        }
+    }
+
+    @media (min-width: 641px) {
+        .mobile-menu {
+            display: none;
+        }
+    }

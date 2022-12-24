@@ -1,0 +1,11 @@
+17/27 Analizando codigo de proyectos open source
+
+
+
+Para comenzar con el analisis, lo primero sera abrir con live server el archivo "clase1.html" del proyecto clonado. Luego continuar revisarndo todos los archivos .html para ver que los estilos esten cargados, que las imagenes se vean y hacer pruebas cambiando el tamaño de la pantalla para ver algunos cambios con responsive design.
+
+Crear un nuevo archivo llamado "index.html" en el cual vamos a fusionar la mayor cantidad de codigo posible para hacerlo ver como un sitio mas real, como funcionaria en la vida real.
+
+Crear un nuevo archivo llamado "styles.css" en el cual vamos a fusionar todos los estilos css de los diferentes archivos .html de esta manera se vera mas ordenado y es como se hace en el trabajo en la vida real.
+
+Finalmente, crear un nuevo archivo llamado "main.js" donde vamos a agregar el codigo javascript para darle interaccion a las maquetas html del proyecto clonado.

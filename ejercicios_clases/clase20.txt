@@ -1,0 +1,49 @@
+20/27 Carrito de compras
+
+
+
+La siguiente nueva funcionalidad del proyecto sera al presionar el icono de carrito de compra, que muestre un menu con los productos ya agregados, esto se lograra fusionando el codigo que llevamos hasta ahora con la clase13.html 
+
+El nuevo codigo debe ser pegado fuera de las etiquetas <nav> y no es necesario agregar ningun div ya que <aside> es una etiqueta de estructura basica de html.
+
+El codigo para hacer aparecer el menu del carrito de compra con JS es:
+
+    const menuCarritoIcon = document.querySelector('.navbar-shopping-cart');
+    const aside = document.querySelector('.product-detail');
+
+    menuCarritoIcon.addEventListener('click', toggleCarritoAside);
+
+    /* Creo una nueva funcion para hacer aparecer y desaparecer el menu aside al presionar el icono carrito de compra. */
+    function toggleCarritoAside() {
+        /* Se produce un problema en la vista, si abro el menu de hamburguesa, y tambien el menu del carrito de compra, ambos textos se montan entre ellos, por lo que utilizando JS, se creara una regla que evite esto. */
+
+        /* Creo una variable, la cual se encargara de ver si mobileMenu "contiene" la clase inactive. */
+        const isMobileMenuClosed = mobileMenu.classList.contains('inactive');
+        
+        /* Utilizando el condicional if() mas ! creo una pregunta con negacion, es decir:  */
+        /* Si mobileMenu NO tiene la clase inactive, utilizando add se la agrego. */
+        if (!isMobileMenuClosed) {
+            mobileMenu.classList.add('inactive'); 
+        }
+        
+        aside.classList.toggle('inactive');
+    }
+
+
+Siguiendo la logica de hacer aparecer y desaparecer los menu si es que uno ya esta abierto al presionar alguno de los iconos debo ajustar este mismo codigo en funciones ya creadas para que todos sigan la misma logica.
+
+    function toogleDesktopMenu() {
+
+    }
+
+    function toogleMobileMenu() {
+        
+    }
+
+Tambien se agrega una regla media query para que cuando el menu sea abierto en dispositivos menores a 640 pixeles, cubra toda la pantalla.
+
+    @media (max-width: 640px) {
+        .product-detail {
+            width: 100%;
+        }
+    }

@@ -1,0 +1,33 @@
+22/27 Detalles de un producto
+
+
+
+Ahora debemos agregar funcionalidad, a que cada vez que un usuario le de clic a un producto, este se muestre en un nuevo menu aside.
+
+Para esto vamos a copiar el codigo de clase12.html copio todo el codigo de la etiqueta <aside> y lo pego debajo de la que ya tenia.
+Pero al hacer esto, puedo notar un problema de inmediato, ambos <aside> tienen la misma clase "product-detail" y aunque en teoria se parecen, no tienen funciones iguales, ademas en javascript, ya se definio una variable que apunta a esta clase, por lo que se puede romper la aplicacion.
+
+Existen dos soluciones posibles: 
+
+La primera es cambiar el nombre de la clase del segundo aside, para evitar conflictos, y copiar nuevamente todos los estilos css con los nombres nuevos, un ejemplo podria ser: "product-detail-secondary" y agregar esta palabra a todos los estilos para diferenciarlos.
+
+La segunda es quitarle la clase "product-detail" a ambas etiquetas <aside> y asignarles id unicos a cada una, si se hace esto, tambien se debe cambiar el codigo javascript donde se crea una variable a partir de una clase, y esta vez se debe cambiar por un id. Tambien se debe ajustar los estilos CSS cambiando el valor de la clase, por esta vez, la etiqueta <aside> ya que es mas facil de entender cuando se vuelve a leer el codigo.
+
+Para este ejercicio, los cambios que realice fueror:
+Quitarle las clases a ambas etiquetas <aside> y agregarles un id unico a cada uno
+
+    <aside id="shoppingCartContainer" class="inactive">
+    </aside>
+
+    <aside id="productDetailContainer" class="inactive">
+    </aside>
+
+Realizar el cambio en javascript en donde la variable aside apuntaba a una clase, ahora apuntara a un id especifico.
+
+    const aside = document.querySelector('#shoppingCartContainer');
+
+En el archivos de estilos css fue donde mas cambios se hicieron, ya que existian muchas clases con el mismo nombre que estaban generando conflictos, por lo que a las clases que ya existian y tenian nombres repetidos, se les agrego por delante, un id o el nombre de otra clase que esten juntas para que se cumplan las reglas de estilos.
+    
+    .product-card .product-info { }
+
+    #productDetailContainer > .product-info { }

@@ -1,0 +1,26 @@
+23/27 Interacción entre todos los componentes
+
+
+
+Esta clase es una continuacion de la anterior. Ahora se va a agregar funcionalidad al menu <aside> de productos, al presionar una imagen, se mostrara en el menu lateral.
+
+Se deben crear nuevas funciones y corregir algunas existentes para poder mostrar y ocultar diferentes etiquetas dependiendo de donde haga clic el usuario.
+
+El codigo JS para poder hacer estos cambios es el siguiente:
+
+    const productDetailContainer = document.querySelector('#productDetailContainer');
+    const productDetailCloseIcon = document.querySelector('.product-detail-close')
+
+    /* Funcion para mostrar el menu aside con la vista del producto. Para hacerlo funcionar, solo debo remover la clase inactive, que por defecto estara dentro del html. */
+    function openProductDetailAside() {
+        productDetailContainer.classList.remove('inactive');
+        // creo una nueva regla, cuando tenga el aside abierto, que cierre el menu del carrito, ya que si no se solapan entre ellos.
+        aside.classList.add('inactive');
+    }
+
+    productDetailCloseIcon.addEventListener('click', closeProductDetailAside);
+
+    /* Funcion que al presionar el boton con la X de cerrar en el menu aside, agregue la clase inactive para ocultar dicho menu. */
+    function closeProductDetailAside() {
+        productDetailContainer.classList.add('inactive');
+    }

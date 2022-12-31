@@ -1,0 +1,39 @@
+24/27 Pull Requests: aportando código a proyectos en GitHub
+
+
+
+Para poder hacer un pull request de los cambios que realice en el proyecto y enviarselos a la persona dueña del repositorio original, lo primero es abrir la consola en la carpeta MAIN del proyecto.
+
+Como recomendacion, utilizar git status para comprobar que no me queda ningun cambio pendiente por guardar.
+
+Tambien puedo utilizar git log para ver el historial de commit que hice.
+
+Si todo esta bien, abrir el navegador e ir a mi cuenta de GitHub, buscar el repositorio de mi proyecto, en este caso: 
+curso-frontend-developer-practico.
+
+Al entrar, puedo ver un mensaje que dice: This branch is 9 commits ahead of platzi:main. 
+Lo que significa que el proyecto que yo termine, tiene 9 commits nuevos que la rama principal de la cuenta de platzi no tiene.
+
+En la barra de navegacion del repositorio, puedo ver una pestaña que dice "Pull request". 
+Ahora presiono el boton que dice "New pull request".
+Se abrira una nueva pagina, en donde me pregunta, primero, hacia que repositorio quiero enviar los cambios, y luego, desde que repositorio saldran los cambios.
+IMPORTANTE: para este caso las opciones serian
+    base: main
+    compare: main
+Esto significa, que compare los cambios que hice de la rama main de Platzi, con la rama main de mi proyecto. (En un ambiente real de desarrollo, estos cambios se hacen a ramas de pruebas, donde se pueden agregar nuevas funcionalidades y luego revisar si realmente sirven para subirlos a la rama main.)
+Presiono el boton "Create pull request".
+Me pedira que deje un poquito de informacion:
+    Title: Fusión de los componentes de la vista principal.
+    Comment: Agregamos los archivos de index.html, styles.css y main.js para fusionar todos los componentes de la vista principal. 
+    Archivos o componentes que fusionamos:
+    - clase11.html
+    - clase7.html
+    - clase8.html
+    - clase13.html
+    - clase6.html
+    - clase12.html
+    Gracias a la fusión los usuarios pueden utilizar el menu de navegacion con todos sus componentes. Funciona en mobile, desktop, con carrito de compras y los detalles de un producto, ademas de renderizar la lista de productos a partir de un array.
+    Todos los componentes se probaron individualmente y en conjunto para que los usarios tengan una buena experiencia.
+Finalmente, presionar el boton "Create pull request".
+
+Ahora solo se debe esperar a que el administrador de la cuenta de Platzi revise mis contribuciones al proyecto, si estan bien, si estan mal, si se puede mejorar, y todo eso me aparecera en mensajes que esa persona me podra dejar.

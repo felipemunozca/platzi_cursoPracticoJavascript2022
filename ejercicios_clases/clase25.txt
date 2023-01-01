@@ -1,0 +1,12 @@
+25/27 Deploy con GitHub Pages
+
+
+
+Si quedamos conformes con nuestro desarrollo y lo queremos ver corriendo en un servidor real, GitHub Pages es una buena herramienta para eso.
+
+Dentro de mi repositorio, en el menu de navegacion, ir hasta la etiqueta que dice "Settings".
+En el menu lateral izquierdo, hacer clic donde dice "Pages".
+En la seccion Source, presionar el boton que dice "None" y seleccionar la la rama que queremos desplegar, en este caso es la opcion "main".
+Luego nos pregunta, si queremos que la pagina despliegue desde la carpeta principal "root" o desde una carpeta "docs" (docs se utiliza para la documentacion, cuando se crean sitios en bases a archivos readme con codigo en formato markdown.)
+Presionamos el boton "Save".
+Finalmente, esperamos unos minutos y actualizamos la pagina hasta que aparesca un url con la direccion.
